@@ -1,0 +1,4 @@
+CFLAGS="${CFLAGS} -Wno-error=implicit-int"
+CXXFLAGS="${CXXFLAGS} -Wno-error=implicit-int"
+FCFLAGS="${FCFLAGS} -Wno-error=implicit-int"
+FFLAGS="${FFLAGS} -Wno-error=implicit-int"

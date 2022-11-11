@@ -1,0 +1,13 @@
+*/*::mv
+dev-lang/rust-bin
+net-libs/nodejs::gentoo # Pulls in GCC
+sys-devel/llvm::12101111-overlay
+sys-devel/llvm::clang-musl
+sys-libs/musl::12101111-overlay
+www-client/firefox::12101111-overlay
+www-client/firefox::clang-musl
+dev-lang/rust::12101111-overlay
+dev-lang/rust::clang-musl
+virtual/rust::clang-musl
+virtual/dist-kernel::src_prepare-overlay
+sys-devel/binutils::12101111-overlay

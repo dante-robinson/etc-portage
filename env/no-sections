@@ -1,0 +1,6 @@
+COMMON_FLAGS="-march=native -mtune=native -O3 -pipe -fomit-frame-pointer -fno-plt -fPIC -fPIE"
+
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"

@@ -1,0 +1,9 @@
+COMMON_FLAGS="-march=native -mtune=native -O2 -pipe -fomit-frame-pointer -fno-plt"
+CFLAGS="${COMMON_FLAGS} ${CFLAGS}"
+CXXFLAGS="${COMMON_FLAGS} ${CFLAGS}"
+FCFLAGS="${COMMON_FLAGS} ${CFLAGS}"
+FFLAGS="${COMMON_FLAGS} ${CFLAGS}"
+
+LDFLAGS="-march=native -mtune=native -fuse-ld=mold -Wl,-O2,-zrelro,-znow"
+
+RUSTFLAGS="-Ctarget-cpu=native -Copt-level=2 -Clink-arg=-fuse-ld=/usr/bin/mold -Ctarget-feature=-crt-static -Clinker=clang"

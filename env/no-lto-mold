@@ -1,0 +1,15 @@
+# Import Default CFlags (COMMON_FLAGS)
+source /etc/portage/make.conf
+
+# Import LTO added CFlags
+source /etc/portage/make.conf.lto
+
+CFLAGS="${COMMON_FLAGS} ${CFLAGS_NO_LTO}"
+CXXFLAGS="${COMMON_FLAGS} ${CFLAGS_NO_LTO}"
+FCFLAGS="${COMMON_FLAGS} ${CFLAGS_NO_LTO}"
+FFLAGS="${COMMON_FLAGS} ${CFLAGS_NO_LTO}"
+
+# Remove mold will use default Linker. Clang = LLD, GCC = BFD
+LDFLAGS="-march=native -mtune=native -Wl,-O3,-zrelro,-znow,-pie"
+
+RUSTFLAGS="-Ctarget-cpu=native -Copt-level=3"

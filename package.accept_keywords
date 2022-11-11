@@ -1,0 +1,26 @@
+sys-libs/musl ~amd64
+sys-libs/libxcrypt ~amd64 # musl
+sci-biology/foldingathome ~amd64
+sys-devel/mold ~amd64
+dev-cpp/tbb ~amd64 # Mold 1.6
+gui-apps/wofi **
+sys-devel/gcc ~amd64 # Mold needs GCC 12 or greater
+sys-devel/binutils ~amd64 # GCC
+www-client/firefox ~amd64
+dev-libs/nss ~amd64 # Firefox
+dev-libs/nspr ~amd64 # Firefox
+app-admin/doas ~amd64
+app-misc/nnn ~amd64
+app-misc/pfetch ~amd64
+net-misc/rsync ~amd64 # C Issue because -acl
+net-libs/nodejs ~amd64 # clang-musl overlay removes GCC dep
+sys-kernel/gentoo-kernel ~amd64
+virtual/dist-kernel ~amd64
+app-admin/keepassxc ~amd64 # Need 2.7.3 or later to remove X
+sys-process/nohang **
+app-forensics/lynis ~amd64
+media-fonts/iosevka ~amd64
+sys-config/ltoize ~amd64
+dev-util/sccache ~amd64
+app-admin/ananicy ~amd64
+sci-misc/boinc ~amd64

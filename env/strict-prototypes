@@ -1,0 +1,4 @@
+CFLAGS="${CFLAGS} -Wstrict-prototypes"
+CXXFLAGS="${CXXFLAGS} -Wstrict-prototypes"
+FCFLAGS="${FCFLAGS} -Wstrict-prototypes"
+FFLAGS="${FFLAGS} -Wstrict-prototypes"

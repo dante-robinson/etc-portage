@@ -1,0 +1,4 @@
+CFLAGS="${CFLAGS} -fcommon"
+CXXFLAGS="${CXXFLAGS} -fcommon"
+FCFLAGS="${FCFLAGS} -fcommon"
+FFLAGS="${FFLAGS} -fcommon"

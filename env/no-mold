@@ -1,0 +1,4 @@
+# Remove mold will use default Linker. Clang = LLD, GCC = BFD
+LDFLAGS="-march=native -mtune=native -Wl,-O3,-zrelro,-znow"
+
+RUSTFLAGS="-Ctarget-cpu=native -Copt-level=3"

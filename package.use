@@ -1,0 +1,61 @@
+gui-wm/sway swaybar wallpapers swaybg -swayidle -swaylock -swaymsg -swaynag
+gui-apps/swaybg gdk-pixbuf
+x11-misc/i3blocks -contrib
+sys-kernel/gentoo-kernel savedconfig
+sys-devel/clang default-compiler-rt default-lld llvm-libunwind default-libcxx
+sys-devel/clang-toolchain-symlinks -gcc-symlinks
+sys-devel/gcc -fortran
+sys-devel/clang-runtime sanitize
+dev-qt/qtgui egl eglfs
+app-admin/keepassxc -network
+gui-apps/foot -grapheme-clustering
+x11-libs/libdrm video_cards_radeon
+media-libs/mesa osmesa
+dev-lang/rust clippy rls rust-src rustfmt sanitizers system-llvm -system-bootstrap -wasm
+virtual/rust rustfmt
+media-libs/libpng apng
+sys-boot/grub:2 device-mapper
+media-libs/freetype -adobe-cff
+net-wireless/bluez experimental readline -obex
+media-libs/libpulse dbus -asyncns
+app-editors/vim python -minimal
+app-editors/vim-core -minimal
+app-admin/doas persist
+sys-kernel/linux-firmware initramfs savedconfig
+dev-python/requests socks5
+net-vpn/tor tor-hardening -server
+app-forensics/lynis -cron
+media-video/ffmpeg mp3 libv4l openh264 threads x264 x265 xvid -fftools_cws2fws
+media-libs/dav1d -10bit
+net-misc/curl -tftp
+media-libs/x265 -10bit -12bit
+# pgo requires X to be enabled av1 pulls yasm harfbuzz pulls graphite2
+www-client/firefox eme-free geckodriver hwaccel system-png -system-av1 -system-harfbuzz -system-libvpx -system-webp
+media-libs/libsdl2 haptic threads 
+net-wireless/wpa_supplicant qt5
+sys-apps/util-linux cryptsetup -cramfs
+sys-kernel/installkernel-gentoo grub
+dev-lang/python xml -readline
+sys-libs/ncurses -minimal
+sys-libs/zlib minizip
+net-libs/nodejs icu -system-icu 
+app-arch/unzip -natspec
+media-plugins/audacious-plugins flac mp3
+media-video/mpv cli opengl -iconv -uchardet -xv
+dev-util/cmake -qt5
+sys-fs/lvm2 -thin
+media-fonts/nerd-fonts robotomono symbolsmono X
+dev-libs/libpcre -readline
+dev-libs/libpcre2 -readline
+sys-apps/openrc -netifrc
+net-p2p/transmission lightweight qt5
+media-sound/pulseaudio bluetooth daemon
+media-sound/pulseaudio-daemon bluetooth dbus -orc -asyncns -ssl -webrtc-aec
+x11-libs/cairo svg
+app-crypt/gnupg -smartcard
+media-fonts/fontawesome ttf
+app-text/poppler cairo -jpeg2k -utils
+dev-util/ccache -static-c++
+app-portage/portage-bashrc-mv -title
+app-editors/neovim -nvimpager
+#sys-devel/bc -readline # Broken must keep readline
